@@ -1,0 +1,27 @@
+{
+    // ARGS - remove app install for multiple profiles
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "dev",
+            "request": "launch",
+            "type": "dart",
+            "args": ["--device-user", "0"]
+        },
+        {
+            "name": "profile",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "args": ["--device-user", "0"]
+        },
+        {
+            "name": "release",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "args": ["--device-user", "0"]
+        }
+    ]
+}
